@@ -411,7 +411,7 @@ class ZypperTestCase(TestCase, LoaderModuleMockMixin):
                 zypper.refresh_db(
                     gpgautoimport=True,
                     refresh=True,
-                    repo="mock-repo-name",
+                    repos="mock-repo-name",
                     root=None,
                     url="http://repo.url/some/path",
                 )
@@ -428,7 +428,7 @@ class ZypperTestCase(TestCase, LoaderModuleMockMixin):
                 )
                 zypper.refresh_db(
                     gpgautoimport=True,
-                    repo="mock-repo-name",
+                    repos="mock-repo-name",
                     root=None,
                     url="http://repo.url/some/path",
                 )
