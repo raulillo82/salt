@@ -1406,7 +1406,7 @@ def mod_repo(repo, **kwargs):
         # when used with "zypper ar --refresh" or "zypper mr --refresh"
         # --gpg-auto-import-keys is not doing anything
         # so we need to specifically refresh here with --gpg-auto-import-keys
-        kwargs.update({"repo": repo})
+        kwargs.update({"repos": repo})
         refresh_db(root=root, **kwargs)
     elif not added and not cmd_opt:
         comment = "Specified arguments did not result in modification of repo"

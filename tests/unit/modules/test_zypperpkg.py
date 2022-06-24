@@ -2117,7 +2117,7 @@ Repository 'DUMMY' not found by its alias, number, or URI.
             )
             refreshmock.assert_called_once_with(
                 gpgautoimport=True,
-                repo=name,
+                repos=name,
                 root=None,
                 url="http://repo.url/some/path",
             )
@@ -2146,7 +2146,7 @@ Repository 'DUMMY' not found by its alias, number, or URI.
             )
             refreshmock.assert_called_once_with(
                 gpgautoimport=True,
-                repo=name,
+                repos=name,
                 root=None,
                 url="http://repo.url/some/path",
             )
@@ -2181,7 +2181,7 @@ Repository 'DUMMY' not found by its alias, number, or URI.
             refreshmock.assert_called_once_with(
                 gpgautoimport=True,
                 refresh=True,
-                repo=name,
+                repos=name,
                 root=None,
                 url="http://repo.url/some/path",
             )
@@ -2213,7 +2213,7 @@ Repository 'DUMMY' not found by its alias, number, or URI.
             refreshmock.assert_called_once_with(
                 gpgautoimport=True,
                 refresh=True,
-                repo=name,
+                repos=name,
                 root=None,
                 url="http://repo.url/some/path",
             )
